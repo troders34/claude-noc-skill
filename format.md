@@ -27,6 +27,8 @@ C. To send an unsolicited, asynchronous alert from a router to the monitoring se
 
 D. To synchronize the internal clocks of all managed network devices to ensure accurate system log timestamps
 
+The key answer and explanation must be placed at the end of the last number of question, but the format should be like this:
+
 Key answer = C
 
 Explanation = Simple Network Management Protocol (SNMP) operates using two primary communication methods: Polling and Traps. An SNMP Trap is a push-based mechanism. Instead of the central monitoring server constantly asking the router for updates (which is known as SNMP Polling or a GET request, as described in Option A), a Trap allows the router to instantly notify the server on its own when a specific threshold is breached (like ether1 losing its link status). Option B describes SNMPv3 authentication/encryption, and Option D describes NTP (Network Time Protocol).
