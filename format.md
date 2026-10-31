@@ -16,6 +16,7 @@ In generating the questions, provide the following mandatory components:
 - Type = multiple-choice single-answer
 - Subject = network monitoring
 - Design = technical, scenario-based
+- Difficulty = Professional
 - Vendor = Vendor-neutral
 
 1. In a Network Operations Center (NOC), you are configuring a monitoring server to track the health of several enterprise routers. What is the primary function of an "SNMP Trap" in this monitoring architecture? Options:
