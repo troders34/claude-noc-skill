@@ -1,4 +1,7 @@
 # Format
+
+The examples below show the layout and required components only. Their topics, difficulty levels, and vendors are illustrative and must not be copied.
+
 In generating the questions, provide the following mandatory components:
 
 - number of questions (for example: 1,2,3,40,51)
