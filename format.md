@@ -16,7 +16,7 @@ In generating the questions, provide the following mandatory components:
 - Type = multiple-choice single-answer
 - Subject = network monitoring
 - Design = technical, scenario-based
-- Vendor = 
+- Vendor = Vendor-neutral
 
 1. In a Network Operations Center (NOC), you are configuring a monitoring server to track the health of several enterprise routers. What is the primary function of an "SNMP Trap" in this monitoring architecture? Options:
 
@@ -39,7 +39,7 @@ Explanation = Simple Network Management Protocol (SNMP) operates using two prima
 - Subject = network monitoring
 - Design = theoretical
 - Difficulty = Entry-level
-- Vendor = 
+- Vendor = Cisco, NetFlow
 
 1. Which of the following network metrics are typically gathered using flow-based monitoring (such as NetFlow or sFlow) rather than standard SNMP polling?
 
@@ -60,7 +60,7 @@ Explanation = Flow-based monitoring protocols analyze the metadata of packets pa
 - Subject = network monitoring
 - Design = technical, troubleshooting
 - Difficulty = Intermediate
-- Vendor = 
+- Vendor = Cisco
 
 1. Your central monitoring server has suddenly stopped receiving SNMP metrics from a core MikroTik router. However, the router is still actively passing network traffic and responding to ICMP ping requests from the monitoring server. Describe the step-by-step troubleshooting process to identify and resolve this SNMP communication failure.
 
@@ -77,7 +77,7 @@ Explanation = The successful ICMP replies prove that Layer 3 (IP routing) and ph
 - Subject = network monitoring
 - Design = theoretical
 - Difficulty = Expert
-- Vendor = 
+- Vendor = vendor-neutral
 
 1. Port mirroring (SPAN) is classified as an active monitoring technique because it actively injects synthetic test packets into the network to measure latency and packet loss. (True/False)
 
@@ -90,7 +90,7 @@ Explanation = Port mirroring is a passive monitoring technique. It safely duplic
 - Subject = network monitoring
 - Design = technical, scenario-based
 - Difficulty = Professional
-- Vendor = 
+- Vendor = MikroTik
 
 1. You have deployed a new MikroTik Cloud Hosted Router (CHR) node in a PNETLab topology. You need to configure this router to forward its system event logs to a remote monitoring Syslog server located at 192.168.10.100. Provide the exact configuration steps required to achieve this.
 
