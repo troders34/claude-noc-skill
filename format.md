@@ -1,7 +1,7 @@
 # Format
 In generating the questions, provide the following mandatory components:
 
-- number of questions
+- number of questions (for example: 1,2,3,40,51)
 - type of questions
 - sentence of question
 - subject
