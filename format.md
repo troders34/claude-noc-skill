@@ -7,9 +7,9 @@ In generating the questions, provide the following mandatory components:
 - subject
 - question's design
 - vendor (if applicable)
-- answer options: if multiple-choice (A, B, C, D), if true-or-false (True or False), if labs only (tell what to do and consider)
+- answer options: if multiple-choice (A, B, C, D), if true-or-false (True or False)
 - key answer: applicable to any type of questions
-- brief explanation of key answer
+- brief explanation of key answer, for labs questions provide solving methodology and things to consider to support the answer.
 
 For example:
 
