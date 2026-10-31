@@ -108,7 +108,7 @@ Key answer =
 
 Explanation = By default, RouterOS logs are only stored in local memory and are lost upon a reboot. This configuration creates a dedicated pathway to push critical, warning, and informational system events over the network to a centralized, persistent log server using UDP port 514.
 
-Methodology = [name the method that fits: configuration workflow / troubleshooting (divide and conquer) / root cause analysis / post-mortem]
+Methodology = [name the method that fits: configuration workflow / troubleshooting (divide and conquer) / root cause analysis / post-mortem / other methods]
 1. Step 1 (Target Definition): You must first establish "where" and "how" the logs are being sent. Creating a new logging action sets the destination IP and prepares the router to format the messages for a remote server rather than local disk or memory.
 2. Step 2 (Topic Binding): You must define "what" is being sent. Creating a logging rule binds specific severity levels (topics) to the action you just created.
 
