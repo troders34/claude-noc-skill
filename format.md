@@ -52,7 +52,7 @@ Key answers = B,D
 Explanation = Flow-based monitoring protocols analyze the metadata of packets passing through a device to determine traffic patterns (who is talking to whom, and on what ports). SNMP polling is primarily used for pulling hardware-level device health metrics like CPU usage, memory, and temperature.
 
 ## For example (essay):
-- Type = multiple-choice multiple-answer
+- Type = essay
 - Subject = network monitoring
 - Design = technical, troubleshooting
 
@@ -86,18 +86,18 @@ Explanation = Port mirroring is a passive monitoring technique. It safely duplic
 
 Key answer =
 1. Define the remote server target:
-`
+```
 /system logging action add name=RemoteSyslog target=remote remote=192.168.10.100
-`
+```
 
 2. Route specific log topics to that target:
-`
+```
 /system logging add action=RemoteSyslog topics=info,error,warning
-`
+```
 
 Explanation = By default, RouterOS logs are only stored in local memory and are lost upon a reboot. This configuration creates a dedicated pathway to push critical, warning, and informational system events over the network to a centralized, persistent log server using UDP port 514.
 
-Methodology = {name of methodology, for example = root cause analysis}
+Methodology = [name the method that fits: configuration workflow / troubleshooting (divide and conquer) / root cause analysis / post-mortem]
 1. Step 1 (Target Definition): You must first establish "where" and "how" the logs are being sent. Creating a new logging action sets the destination IP and prepares the router to format the messages for a remote server rather than local disk or memory.
 2. Step 2 (Topic Binding): You must define "what" is being sent. Creating a logging rule binds specific severity levels (topics) to the action you just created.
 
@@ -105,3 +105,5 @@ Things to consider to support answering:
 1. Reachability: Before applying the configuration, use the ping tool to ensure the router has a valid route to 192.168.10.100.
 2. Firewall Rules: Ensure there are no strict output chain firewall rules dropping outbound UDP traffic on port 514.
 3. Noise Filtering: Consider omitting the debug topic in the second command unless actively troubleshooting, as sending debug logs to a remote server can easily overwhelm the network and the Syslog storage.
+
+Verification = [how to confirm success, e.g., /log print on the router, then check that the message arrives on the Syslog server]
