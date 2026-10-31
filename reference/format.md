@@ -40,7 +40,7 @@ Explanation = Simple Network Management Protocol (SNMP) operates using two prima
 - Subject = network monitoring
 - Design = theoretical
 - Difficulty = Entry-level
-- Vendor = Cisco, NetFlow
+- Vendor = NetFlow
 
 1. Which of the following network metrics are typically gathered using flow-based monitoring (such as NetFlow or sFlow) rather than standard SNMP polling?
 
@@ -61,7 +61,7 @@ Explanation = Flow-based monitoring protocols analyze the metadata of packets pa
 - Subject = network monitoring
 - Design = technical, troubleshooting
 - Difficulty = Intermediate
-- Vendor = Cisco
+- Vendor = MikroTik
 
 1. Your central monitoring server has suddenly stopped receiving SNMP metrics from a core MikroTik router. However, the router is still actively passing network traffic and responding to ICMP ping requests from the monitoring server. Describe the step-by-step troubleshooting process to identify and resolve this SNMP communication failure.
 
@@ -108,7 +108,7 @@ Key answer =
 
 Explanation = By default, RouterOS logs are only stored in local memory and are lost upon a reboot. This configuration creates a dedicated pathway to push critical, warning, and informational system events over the network to a centralized, persistent log server using UDP port 514.
 
-Methodology = [name the method that fits: configuration workflow / troubleshooting (divide and conquer) / root cause analysis / post-mortem / other methods]
+Methodology = root cause analysis
 1. Step 1 (Target Definition): You must first establish "where" and "how" the logs are being sent. Creating a new logging action sets the destination IP and prepares the router to format the messages for a remote server rather than local disk or memory.
 2. Step 2 (Topic Binding): You must define "what" is being sent. Creating a logging rule binds specific severity levels (topics) to the action you just created.
 
@@ -117,4 +117,4 @@ Things to consider to support answering:
 2. Firewall Rules: Ensure there are no strict output chain firewall rules dropping outbound UDP traffic on port 514.
 3. Noise Filtering: Consider omitting the debug topic in the second command unless actively troubleshooting, as sending debug logs to a remote server can easily overwhelm the network and the Syslog storage.
 
-Verification = [how to confirm success, e.g., /log print on the router, then check that the message arrives on the Syslog server]
+Verification = Run `/log print` on the router, then confirm the test message arrives on the Syslog server at 192.168.10.100.
