@@ -6,15 +6,17 @@ In generating the questions, provide the following mandatory components:
 - sentence of question
 - subject
 - question's design
-- vendor (if applicable)
+- vendor (if applicable) = [name, "vendor-neutral"]
 - answer options: if multiple-choice (A, B, C, D), if true-or-false (True or False)
 - key answer: applicable to any type of questions
 - brief explanation of key answer, for labs questions provide solving methodology and things to consider to support the answer.
+- difficulty = entry-level / intermediate / professional / expert
 
 ## For example (multiple-choice single-answer):
 - Type = multiple-choice single-answer
 - Subject = network monitoring
 - Design = technical, scenario-based
+- Vendor = 
 
 1. In a Network Operations Center (NOC), you are configuring a monitoring server to track the health of several enterprise routers. What is the primary function of an "SNMP Trap" in this monitoring architecture? Options:
 
@@ -36,6 +38,8 @@ Explanation = Simple Network Management Protocol (SNMP) operates using two prima
 - Type = multiple-choice multiple-answer
 - Subject = network monitoring
 - Design = theoretical
+- Difficulty = Entry-level
+- Vendor = 
 
 1. Which of the following network metrics are typically gathered using flow-based monitoring (such as NetFlow or sFlow) rather than standard SNMP polling?
 
@@ -55,6 +59,8 @@ Explanation = Flow-based monitoring protocols analyze the metadata of packets pa
 - Type = essay
 - Subject = network monitoring
 - Design = technical, troubleshooting
+- Difficulty = Intermediate
+- Vendor = 
 
 1. Your central monitoring server has suddenly stopped receiving SNMP metrics from a core MikroTik router. However, the router is still actively passing network traffic and responding to ICMP ping requests from the monitoring server. Describe the step-by-step troubleshooting process to identify and resolve this SNMP communication failure.
 
@@ -70,6 +76,8 @@ Explanation = The successful ICMP replies prove that Layer 3 (IP routing) and ph
 - Type = true-or-false
 - Subject = network monitoring
 - Design = theoretical
+- Difficulty = Expert
+- Vendor = 
 
 1. Port mirroring (SPAN) is classified as an active monitoring technique because it actively injects synthetic test packets into the network to measure latency and packet loss. (True/False)
 
@@ -81,6 +89,8 @@ Explanation = Port mirroring is a passive monitoring technique. It safely duplic
 - Type = labs
 - Subject = network monitoring
 - Design = technical, scenario-based
+- Difficulty = Professional
+- Vendor = 
 
 1. You have deployed a new MikroTik Cloud Hosted Router (CHR) node in a PNETLab topology. You need to configure this router to forward its system event logs to a remote monitoring Syslog server located at 192.168.10.100. Provide the exact configuration steps required to achieve this.
 
