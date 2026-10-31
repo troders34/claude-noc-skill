@@ -1,12 +1,4 @@
 # Specified standards
-There is no good or bad questions actually, but realistic and industries demands ones. Moreover, follow these rules in providing options to answer questions:
-- one ambiguous answer
-- distractors that reflect real mistakes technicians and experts make
-- avoid "all of the above" and "none of the above"
-- realistic difficulty levels
-
-
-# Specified standards
 - Single-answer: exactly one option is unambiguously correct.
 - Multiple-answer: 2-3 options are correct, and the question does not need to state how many to select
 - Distractors reflect real mistakes technicians make: confusing similar protocols, wrong OSI layer, wrong command or flag, misreading output.
