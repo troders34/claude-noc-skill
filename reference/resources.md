@@ -162,7 +162,7 @@ URL = https://www.zabbix.com/training_expert?course=Certified%20Expert&language=
 - Knowledge of monitoring best practices and strategies for effective monitoring in environments like Kubernetes
 
 **Material Domains**
-- Observability Concepts: metrics, understanding of logs and events, tracing and spans, push vs pull, service discovery, basics of Service Leve Objectives (SLOs), Service Level Agreements (SLAs), and Service Level Indicators (SLIs)
+- Observability Concepts: metrics, understanding of logs and events, tracing and spans, push vs pull, service discovery, basics of Service Level Objectives (SLOs), Service Level Agreements (SLAs), and Service Level Indicators (SLIs)
 - Prometheus Fundamentals: system architecture, configuration and scraping, understanding Prometheus limitations, data models and labels, exposition format
 - PromQL: selecting data, rates and derivatives, aggregating over time, aggregating over dimensions, binary operators, histograms, timestamp metrics
 - Instrumentation and Exporters: client libraries, instrumentation, exporters, structuring and naming metrics
